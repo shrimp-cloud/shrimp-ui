@@ -1,6 +1,6 @@
 import FileUpload from './FileUpload';
 import Hamburger from './Hamburger';
-import HeaderSearch from './HeaderSearch';
+// import HeaderSearch from './HeaderSearch';
 import IconSelect from './IconSelect';
 import iFrame from './iFrame';
 import ImagePreview from './ImagePreview';
@@ -8,15 +8,15 @@ import InfoTips from './InfoTips';
 import Pagination from './Pagination';
 import RightToolbar from './RightToolbar';
 import Screenfull from './Screenfull';
-import SizeSelect from './SizeSelect';
+// import SizeSelect from './SizeSelect';
 import SvgIcon from './SvgIcon';
-import TopNav from './TopNav';
+// import TopNav from './TopNav';
 import TreeSelect from './TreeSelect';
 
 export {
     FileUpload,
     Hamburger,
-    HeaderSearch,
+    // HeaderSearch,
     IconSelect,
     iFrame,
     ImagePreview,
@@ -24,8 +24,8 @@ export {
     Pagination,
     RightToolbar,
     Screenfull,
-    SizeSelect,
+    // SizeSelect,
     SvgIcon,
-    TopNav,
+    // TopNav,
     TreeSelect
 }
