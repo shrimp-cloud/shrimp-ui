@@ -17,6 +17,7 @@
 
 <script setup>
 import useAppStore from "@/store/modules/app";
+import { getCurrentInstance, ref, computed } from 'vue';
 
 const appStore = useAppStore();
 const size = computed(() => appStore.size);

@@ -23,6 +23,8 @@
 </template>
 
 <script setup>
+import { defineEmits, defineProps, ref, computed } from 'vue';
+
 const props = defineProps({
   showSearch: {
     type: Boolean,
