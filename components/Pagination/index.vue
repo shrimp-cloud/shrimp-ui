@@ -15,7 +15,8 @@
 </template>
 
 <script setup>
-import { scrollTo } from '@/utils/scroll-to'
+import { scrollTo } from '@/utils/scroll-to';
+import { defineEmits, defineProps, computed } from 'vue';
 
 const props = defineProps({
   total: {
