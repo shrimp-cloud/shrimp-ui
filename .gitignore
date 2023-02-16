@@ -106,3 +106,5 @@ dist
 es/
 lib/
 **/.DS_Store
+.vscode
+.idea
