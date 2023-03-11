@@ -15,7 +15,7 @@ pnpm build
 2. 推送参考文档：https://packages.aliyun.com/npm/npm-registry/guide
 3. 推送：
 ```
-pnpm publish
+pnpm publish --no-git-checks
 ```
 
 

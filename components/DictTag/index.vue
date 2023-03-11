@@ -22,6 +22,8 @@
 </template>
 
 <script setup>
+import { defineProps, computed } from 'vue';
+
 const props = defineProps({
   // 数据
   options: {
