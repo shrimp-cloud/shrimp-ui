@@ -1,5 +1,6 @@
 import Breadcrumb from './Breadcrumb';
 import Crontab from './Crontab';
+import DictTag from './DictTag';
 import FileUpload from './FileUpload';
 import Hamburger from './Hamburger';
 // import HeaderSearch from './HeaderSearch';
@@ -18,6 +19,7 @@ import TreeSelect from './TreeSelect';
 export {
     Breadcrumb,
     Crontab,
+    DictTag,
     FileUpload,
     Hamburger,
     // HeaderSearch,
