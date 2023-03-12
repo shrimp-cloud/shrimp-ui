@@ -15,6 +15,7 @@
 </template>
 
 <script setup>
+import { ElPagination } from 'element-plus';
 import { scrollTo } from '@/utils/scroll-to';
 import { defineEmits, defineProps, computed } from 'vue';
 
