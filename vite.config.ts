@@ -14,7 +14,7 @@ export default defineConfig({
     //cssCodeSplit: true,
     rollupOptions: {
       //忽略打包vue文件
-      external: ['vue'],
+      external: ['vue', 'element-plus'],
       input: ['components/index.ts'],
       output: [
         {
