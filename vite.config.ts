@@ -25,7 +25,10 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: 'es',
-          preserveModulesRoot: 'src'
+          preserveModulesRoot: 'src',
+          globals: {
+            vue: 'Vue'
+          }
         },
         {
           format: 'cjs',
@@ -34,7 +37,10 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: 'lib',
-          preserveModulesRoot: 'src'
+          preserveModulesRoot: 'src',
+          globals: {
+            vue: 'Vue'
+          }
         }
       ]
     },

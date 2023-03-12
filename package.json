@@ -2,7 +2,7 @@
   "name": "shrimp-ui",
   "version": "0.0.7",
   "type": "module",
-  "main": "./es/components/index.js",
+  "main": "./lib/components/index.js",
   "module": "./es/components/index.js",
   "scripts": {
     "dev": "vite",

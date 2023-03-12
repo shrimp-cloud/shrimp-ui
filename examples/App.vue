@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import { Pagination } from '../components/index';
 </script>
 
 <template>
@@ -13,7 +12,7 @@ import { Pagination } from '../components/index';
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" /> -->
-  <Pagination :total="1"></Pagination>
+  <pagination :total="1"></pagination>
   </div>
 </template>
 
