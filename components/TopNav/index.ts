@@ -1,3 +1,10 @@
+import { App, Plugin } from 'vue';
 import TopNav from './index.vue';
 
-export default TopNav
+export const TopNavPlugin: Plugin = {
+    install(app: App) {
+        app.component('top-nav', TopNav);
+    }
+}
+
+export { TopNav };

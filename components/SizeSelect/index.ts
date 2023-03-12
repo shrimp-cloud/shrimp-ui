@@ -1,3 +1,10 @@
+import { App, Plugin } from 'vue';
 import SizeSelect from './index.vue';
 
-export default SizeSelect
+export const SizeSelectPlugin: Plugin = {
+    install(app: App) {
+        app.component('size-select', SizeSelect);
+    }
+}
+
+export { SizeSelect };

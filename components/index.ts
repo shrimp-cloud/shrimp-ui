@@ -1,48 +1,55 @@
 import { App, Plugin } from 'vue';
 
-// import Breadcrumb from './Breadcrumb';
-// import Crontab from './Crontab';
-// import DictTag from './DictTag';
-// import FileUpload from './FileUpload';
-// import Hamburger from './Hamburger';
-// // import HeaderSearch from './HeaderSearch';
-// import IconSelect from './IconSelect';
-// import iFrame from './iFrame';
-// import ImagePreview from './ImagePreview';
-// import InfoTips from './InfoTips';
+import { BreadcrumbPlugin } from './Breadcrumb';
+import { CrontabPlugin } from './Crontab';
+import { DictTagPlugin } from './DictTag';
+import { FileUploadPlugin } from './FileUpload';
+import { Hamburger, HamburgerPlugin } from './Hamburger';
+// import HeaderSearch from './HeaderSearch';
+import { IconSelectPlugin } from './IconSelect';
+import { iFramePlugin } from './iFrame';
+import { ImagePreviewPlugin } from './ImagePreview';
+import { InfoTipsPlugin } from './InfoTips';
 import { PaginationPlugin } from './Pagination';
-// import RightToolbar from './RightToolbar';
-// import Screenfull from './Screenfull';
-// // import SizeSelect from './SizeSelect';
-// import SvgIcon from './SvgIcon';
-// // import TopNav from './TopNav';
-// import TreeSelect from './TreeSelect';
-
-// export {
-//     Breadcrumb,
-//     Crontab,
-//     DictTag,
-//     FileUpload,
-//     Hamburger,
-//     // HeaderSearch,
-//     IconSelect,
-//     iFrame,
-//     ImagePreview,
-//     InfoTips,
-//     RightToolbar,
-//     Screenfull,
-//     // SizeSelect,
-//     SvgIcon,
-//     // TopNav,
-//     TreeSelect
-// }
+import { RightToolbarPlugin } from './RightToolbar';
+import { ScreenfullPlugin } from './Screenfull';
+// import SizeSelect from './SizeSelect';
+import { SvgIconPlugin } from './SvgIcon';
+// import TopNav from './TopNav';
+import { TreeSelectPlugin } from './TreeSelect';
 
 const ShrimpUiPlugin: Plugin = {
   install(app: App) {
+    BreadcrumbPlugin.install?.(app);
+    CrontabPlugin.install?.(app);
+    DictTagPlugin.install?.(app);
+    FileUploadPlugin.install?.(app);
+    HamburgerPlugin.install?.(app);
+    IconSelectPlugin.install?.(app);
+    iFramePlugin.install?.(app);
+    ImagePreviewPlugin.install?.(app);
+    InfoTipsPlugin.install?.(app);
     PaginationPlugin.install?.(app);
+    RightToolbarPlugin.install?.(app);
+    ScreenfullPlugin.install?.(app);
+    SvgIconPlugin.install?.(app);
+    TreeSelectPlugin.install?.(app);
   },
 };
 
 export default ShrimpUiPlugin;
 
+export * from './Breadcrumb';
+export * from './Crontab';
+export * from './DictTag';
+export * from './FileUpload';
+export * from './Hamburger';
+export * from './IconSelect';
+export * from './iFrame';
+export * from './ImagePreview';
+export * from './InfoTips';
 export * from './Pagination';
+export * from './RightToolbar';
+export * from './Screenfull';
+export * from './SvgIcon';
+export * from './TreeSelect';

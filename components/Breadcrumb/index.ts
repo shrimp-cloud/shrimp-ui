@@ -1,3 +1,10 @@
-import Brandcrumb from './index.vue';
+import { App, Plugin } from 'vue';
+import Breadcrumb from './index.vue';
 
-export default Brandcrumb
+export const BreadcrumbPlugin: Plugin = {
+    install(app: App) {
+        app.component('brandcrumb', Breadcrumb);
+    }
+}
+
+export { Breadcrumb };
